@@ -56,12 +56,23 @@ video: Chapter 2 - Part 3
  */
 
 //2)
-void variableDeclarations(float age, float time, float money, int a = 1, int b = 2, int c =3, bool d = false, bool e = true, bool f = false, char man = 'h', char ted = 't', char fred = 'g')
+void variableDeclarations()
 
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+    float age;
+    float time;
+    float money;
+    int a = 1; 
+    int b = 2; 
+    int c =3; 
+    bool d = false; 
+    bool e = true; 
+    bool f = false; 
+    char man = 'h'; 
+    char ted = 't'; 
+    char fred = 'g';
 
     ignoreUnused(age,time,money,a,b,c,d,e,f,man,ted,fred,number); //passing each variable declared to the ignoreUnused() function
 }
