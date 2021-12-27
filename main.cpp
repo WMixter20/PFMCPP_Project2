@@ -15,12 +15,13 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of the 6 major primitive types available in C++  here:
- 
- 
- 
- 
- 
- 
+  int (intereger)
+ boo (boolean)
+ char (charater)
+ float (floating point)
+ double (double floating point)
+ void
+ wchar_t (wide charater)
  
  
  
@@ -56,13 +57,24 @@ video: Chapter 2 - Part 3
 
 //2)
 void variableDeclarations()
+
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+    float age;
+    float time;
+    float money;
+    int a = 1; 
+    int b = 2; 
+    int c =3; 
+    bool d = false; 
+    bool e = true; 
+    bool f = false; 
+    char man = 'h'; 
+    char ted = 't'; 
+    char fred = 'g';
 
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(age,time,money,a,b,c,d,e,f,man,ted,fred,number); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -79,42 +91,91 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+bool playSoccer(bool soccerField, int soccerBall = 1 , int soccerPlayers = 2 )
+    {
+         ignoreUnused(soccerField, soccerBall , soccerPlayers); 
+         return {};
+    }
 /*
  2)
  */
+ void namePet(char firstLetterFirstName, char firstLetterLastName = 'H')
+ {
+     ignoreUnused( firstLetterFirstName , firstLetterLastName );
+ }
 
 /*
  3)
  */
+ int getHeight (int height , int shoeHieght = 5)
+ {
+     ignoreUnused( height , shoeHieght );
+     return {};
+ }
+
 
 /*
  4)
  */
+ int getPokerWinnings (int potSize, bool didBet = false, int moneySpent = 100 )
+ {
+     ignoreUnused( potSize , didBet , moneySpent );
+     return {};
+ }
 
 /*
  5)
  */
+bool runBall (int numPlayers, bool football = true, int currentScore = 7, int otherTeamScore = 14 )
+{
+    ignoreUnused( numPlayers , football , currentScore , otherTeamScore );
+    return {};
+}
 
 /*
  6)
  */
+int getGameScore (int shotsMade = 0, int shotsMissed = 0)
+{
+    ignoreUnused( shotsMade , shotsMissed );
+    return {};
+}
+
 
 /*
  7)
  */
+int getChord (int baseNote , int midNote , int topNote = 147)
+{
+    ignoreUnused( baseNote ,  midNote , topNote );
+    return {};
+}
 
 /*
  8)
  */
+ bool areYouReading (bool hasBook , bool inChair = false)
+ {
+     ignoreUnused(hasBook , inChair);
+     return {};
+ }
 
 /*
  9)
  */
+void startMusic (bool speakerSystem, bool hasPower = false, int numSpeakers = 0, int numSongs = 0)
+{
+    ignoreUnused(speakerSystem , hasPower , numSpeakers , numSongs );
+}
 
 /*
  10)
  */
+bool fixCar (int parts, int numWheels = 4, bool laborProvided = true)
+{
+    ignoreUnused( parts, numWheels , laborProvided );
+    return {};
+}
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
