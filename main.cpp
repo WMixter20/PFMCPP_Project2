@@ -57,23 +57,23 @@ video: Chapter 2 - Part 3
 
 //2)
 void variableDeclarations()
-
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    float age;
-    float time;
-    float money;
+    float age; FIXME: initialize
+    float time;FIXME: initialize
+    float money;FIXME: initialize
     int a = 1; 
     int b = 2; 
-    int c =3; 
+    int c =3; FIXME: spacing around '='
     bool d = false; 
     bool e = true; 
     bool f = false; 
     char man = 'h'; 
     char ted = 't'; 
     char fred = 'g';
-
+    FIXME: declare and initialize 3 doubles
+    FIXME: spacing after ','
     ignoreUnused(age,time,money,a,b,c,d,e,f,man,ted,fred,number); //passing each variable declared to the ignoreUnused() function
 }
 
@@ -92,36 +92,36 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 bool playSoccer(bool soccerField, int soccerBall = 1 , int soccerPlayers = 2 )
-    {
-         ignoreUnused(soccerField, soccerBall , soccerPlayers); 
-         return {};
-    }
+    { FIXME: indentation
+         ignoreUnused(soccerField, soccerBall , soccerPlayers); FIXME: indentation
+         return {};FIXME: indentation
+    }FIXME: indentation
 /*
  2)
  */
- void namePet(char firstLetterFirstName, char firstLetterLastName = 'H')
- {
-     ignoreUnused( firstLetterFirstName , firstLetterLastName );
- }
+ void namePet(char firstLetterFirstName, char firstLetterLastName = 'H') FIXME: indentation
+ { FIXME: indentation
+     ignoreUnused( firstLetterFirstName , firstLetterLastName ); FIXME: indentation
+ } FIXME: indentation
 
 /*
  3)
  */
- int getHeight (int height , int shoeHieght = 5)
- {
-     ignoreUnused( height , shoeHieght );
-     return {};
- }
+ int getHeight (int height , int shoeHieght = 5) FIXME: indentation
+ { FIXME: indentation
+     ignoreUnused( height , shoeHieght ); FIXME: indentation
+     return {}; FIXME: indentation
+ } FIXME: indentation
 
 
 /*
  4)
  */
- int getPokerWinnings (int potSize, bool didBet = false, int moneySpent = 100 )
- {
-     ignoreUnused( potSize , didBet , moneySpent );
-     return {};
- }
+ int getPokerWinnings (int potSize, bool didBet = false, int moneySpent = 100 ) FIXME: indentation
+ { FIXME: indentation
+     ignoreUnused( potSize , didBet , moneySpent ); FIXME: indentation
+     return {}; FIXME: indentation
+ } FIXME: indentation
 
 /*
  5)
@@ -154,11 +154,11 @@ int getChord (int baseNote , int midNote , int topNote = 147)
 /*
  8)
  */
- bool areYouReading (bool hasBook , bool inChair = false)
- {
-     ignoreUnused(hasBook , inChair);
-     return {};
- }
+ bool areYouReading (bool hasBook , bool inChair = false) FIXME: indentation
+ { FIXME: indentation
+     ignoreUnused(hasBook , inChair); FIXME: indentation
+     return {}; FIXME: indentation
+ } FIXME: indentation
 
 /*
  9)
@@ -197,23 +197,23 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    FIXME: Instruction 9)
     //2)
-    
+    FIXME: Instruction 9)
     //3)
-    
+    FIXME: Instruction 9)
     //4)
-    
+    FIXME: Instruction 9)
     //5)
-    
+    FIXME: Instruction 9)
     //6)
-    
+    FIXME: Instruction 9)
     //7)
-    
+    FIXME: Instruction 9)
     //8)
-    
+    FIXME: Instruction 9)
     //9)
-    
+    FIXME: Instruction 9)
     //10)
     
     
