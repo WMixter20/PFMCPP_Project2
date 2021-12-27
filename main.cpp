@@ -99,7 +99,7 @@ bool playSoccer(bool soccerField, int soccerBall = 1 , int soccerPlayers = 2 )
 /*
  2)
  */
- void petName(char firstLetterFirstName, char firstLetterLastName = 'H')
+ void namePet(char firstLetterFirstName, char firstLetterLastName = 'H')
  {
      ignoreUnused( firstLetterFirstName , firstLetterLastName );
  }
@@ -117,7 +117,7 @@ bool playSoccer(bool soccerField, int soccerBall = 1 , int soccerPlayers = 2 )
 /*
  4)
  */
- int pokerWinnings (int potSize, bool didBet = false, int moneySpent = 100 )
+ int getPokerWinnings (int potSize, bool didBet = false, int moneySpent = 100 )
  {
      ignoreUnused( potSize , didBet , moneySpent );
      return {};
@@ -135,7 +135,7 @@ bool runBall (int numPlayers, bool football = true, int currentScore = 7, int ot
 /*
  6)
  */
-int gameScore (int shotsMade = 0, int shotsMissed = 0)
+int getGameScore (int shotsMade = 0, int shotsMissed = 0)
 {
     ignoreUnused( shotsMade , shotsMissed );
     return {};
@@ -145,7 +145,7 @@ int gameScore (int shotsMade = 0, int shotsMissed = 0)
 /*
  7)
  */
-int getchord (int baseNote , int midNote , int topNote = 147)
+int getChord (int baseNote , int midNote , int topNote = 147)
 {
     ignoreUnused( baseNote ,  midNote , topNote );
     return {};
@@ -157,7 +157,7 @@ int getchord (int baseNote , int midNote , int topNote = 147)
  bool areYouReading (bool hasBook , bool inChair = false)
  {
      ignoreUnused(hasBook , inChair);
-    return {};
+     return {};
  }
 
 /*
